@@ -1,7 +1,7 @@
-import Game.Levels.DemoWorld.L01_HelloWorld
+import Game.Levels.MonoidWorld.L01_Monoid
 
-World "DemoWorld"
-Title "Demo World"
+World "MonoidWorld"
+Title "Monoid World"
 
 Introduction "
 This introduction is shown before one enters level 1 of the demo world. Use markdown.

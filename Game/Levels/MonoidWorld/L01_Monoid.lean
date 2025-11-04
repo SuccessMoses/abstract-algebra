@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "DemoWorld"
+World "MonoidWorld"
 Level 1
 
 Title "Hello World"
