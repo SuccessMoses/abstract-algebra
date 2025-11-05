@@ -1,4 +1,17 @@
 import GameServer
+
+import Mathlib.Algebra.BigOperators.Group.List.Defs
+import Mathlib.Algebra.BigOperators.Group.List.Basic
+
+import Mathlib.Logic.Function.Defs
+
+
+import Mathlib.Algebra.Group.Defs
+import Mathlib.Algebra.Group.Basic
+
+import Mathlib.Tactic.Common
+import Mathlib.Tactic.Have
+
 -- import Mathlib.Tactic.Common
 
 /-! Use this file to add things that should be available in all levels.

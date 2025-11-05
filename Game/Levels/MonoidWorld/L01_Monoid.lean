@@ -9,20 +9,21 @@ Introduction "This text is shown as first message when the level is played.
 You can insert hints in the proof below. They will appear in this side panel
 depending on the proof a user provides."
 
-Statement (x y : Nat) (h : x = 2) (g: y = 4) : x + x = y := by
-  Hint "You can either start using `{h}` or `{g}`."
-  Branch
-    rw [g]
-    Hint "You should use `{h}` now."
-    rw [h]
-  rw [h]
-  Hint "You should use `{g}` now."
-  rw [g]
+variable {M : Type} [Monoid M]
+
+example (e : M) (h : ∀ m, e * m = m) : e = 1 := by
+  rw [← mul_one e, h]
+
+NewTactic rw apply
+
+/-- `x ∈ A` means that `x` is an element of `A`.  To enter the symbol `∈`, type
+`\mem` or `\in`. -/
+DefinitionDoc mul_one as "ε"
+
+NewDefinition mul_one
+
+/-- Define a monoid structure on ℕ using addition. -/
+Statement (e : M) (h : ∀ m, e * m = m) : e = 1 := by
+  rw [← mul_one e, h]
 
 Conclusion "This last message appears if the level is solved."
-
-/- Use these commands to add items to the game's inventory. -/
-
-NewTactic rw rfl
--- NewTheorem Nat.add_comm Nat.add_assoc
--- NewDefinition Nat Add Eq

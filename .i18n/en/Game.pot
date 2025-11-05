@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04\n"
+"POT-Creation-Date: 2025-11-05\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -17,17 +17,50 @@ msgid "Hello World"
 msgstr ""
 
 #: Game
-msgid "This text appears on the starting page where one selects the world/level to play.\n"
-"You can use **markdown**."
+msgid "Welcome to *Abstract Algebra Game*. This is a theorem proving game similar to Natural\n"
+"Number Game. It is a way to learn mathematics and lean4 in a very interactive way,\n"
+"similar to playing a computer game. Although, in *Abstract Algebra Game* we focus more\n"
+"on mathlib-style mathematics. The player is expected to have basic familiarity with\n"
+"theoram proving by playing games about Logic and Set (insert link here). Knowledge of\n"
+"abstract mathematics is helpful but not required\n"
+"\n"
+"### The material\n"
+"This is an interactive way to learn abstract algebra in lean. It is expected to be\n"
+"hands-on first approach where the user is proving thoerem, and when they are stuck\n"
+"there is always Hints on the left side panel to help them. Also they can click on the\n"
+"defintions and theorems on the right-side panel to gets more inforamtion."
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
-#. §0: `«{g}»`
 #: Game.Levels.MonoidWorld.L01_Monoid
-msgid "You should use §0 now."
+#: Game.Levels.MonoidWorld.L02_instanceMonoid
+#: Game.Levels.MonoidWorld.L03_ListProd
+msgid "Define a monoid structure on ℕ using addition."
+msgstr ""
+
+#. §0: `Monoid`
+#. §1: `Mul`
+#. §2: `One`
+#. §3: `AddMonoid`
+#. §4: `Add`
+#. §5: `Zero`
+#. §6: `Neg`
+#. §7: `AddMonoid`
+#: Game.Levels.MonoidWorld
+msgid "Welcome to Moniod World! In this world you learn how to define a monoid mathlib style.\n"
+"You will also learn about some basic theorem proving in lean.\n"
+"\n"
+"Mathlib defined the type constructor §0 for a multiplicative monoid. This is\n"
+"because the Monoid class extends §1 and §2, hence (1 : Monoid M) for type M and\n"
+"the binary operator '*' works for (x y : M). There is also §3 which is\n"
+"mathlib's notation for additive monoid, and this class extends §4, §5 and §6.\n"
+"Hence the binary operator '+' and the literal '0' is defined for §7\n"
+"\n"
+"You will prive theorems in this game by using tools called *tactics*. The aim is to\n"
+"prove thoerems by applying tactics in the right order."
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -36,10 +69,6 @@ msgstr ""
 
 #: Game
 msgid "You should use this game as a template for your own game and add your own levels."
-msgstr ""
-
-#: Game.Levels.MonoidWorld
-msgid "Monoid World"
 msgstr ""
 
 #: Game
@@ -51,28 +80,42 @@ msgid "Here you can put additional information about the game. It is accessible\
 "Use **markdown**."
 msgstr ""
 
+#: Game.Levels.MonoidWorld
+msgid "Monoid World"
+msgstr ""
+
 #: Game.Levels.MonoidWorld.L01_Monoid
+#: Game.Levels.MonoidWorld.L02_instanceMonoid
+#: Game.Levels.MonoidWorld.L03_ListProd
 msgid "This last message appears if the level is solved."
 msgstr ""
 
 #: Game.Levels.MonoidWorld.L01_Monoid
+#: Game.Levels.MonoidWorld.L02_instanceMonoid
+#: Game.Levels.MonoidWorld.L03_ListProd
 msgid "This text is shown as first message when the level is played.\n"
 "You can insert hints in the proof below. They will appear in this side panel\n"
 "depending on the proof a user provides."
-msgstr ""
-
-#: Game.Levels.MonoidWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
 msgstr ""
 
 #: Game
 msgid "Abstract Algebra Game"
 msgstr ""
 
-#. §0: `«{h}»`
-#. §1: `«{g}»`
+#. §0: `x ∈ A`
+#. §1: `x`
+#. §2: `A`
+#. §3: `∈`
+#. §4: `\\mem`
+#. §5: `\\in`
 #: Game.Levels.MonoidWorld.L01_Monoid
-msgid "You can either start using §0 or §1."
+msgid "§0 means that §1 is an element of §2.  To enter the symbol §3, type\n"
+"§4 or §5."
+msgstr ""
+
+#: Game.Levels.MonoidWorld.L02_instanceMonoid
+#: Game.Levels.MonoidWorld.L03_ListProd
+msgid "Instance of Monoid"
 msgstr ""
 
 #: Game

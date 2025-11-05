@@ -4,8 +4,19 @@ import Game.Levels.MonoidWorld
 Title "Abstract Algebra Game"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use **markdown**.
+Welcome to *Abstract Algebra Game*. This is a theorem proving game similar to Natural
+Number Game. It is a way to learn mathematics and lean4 in a very interactive way,
+similar to playing a computer game. Although, in *Abstract Algebra Game* we focus more
+on mathlib-style mathematics. The player is expected to have basic familiarity with
+theoram proving by playing games about Logic and Set (insert link here). Knowledge of
+abstract mathematics is helpful but not required
+
+### The material
+This is an interactive way to learn abstract algebra in lean. It is expected to be
+hands-on first approach where the user is proving thoerem, and when they are stuck
+there is always Hints on the left side panel to help them. Also they can click on the
+defintions and theorems on the right-side panel to gets more inforamtion.
+
 "
 
 Info "
