@@ -3,7 +3,11 @@ import GameServer
 import Mathlib.Algebra.BigOperators.Group.List.Defs
 import Mathlib.Algebra.BigOperators.Group.List.Basic
 
+import Mathlib.Algebra.BigOperators.Group.Finset.Defs
+
 import Mathlib.Logic.Function.Defs
+
+import Mathlib.Data.List.FinRange
 
 
 import Mathlib.Algebra.Group.Defs
