@@ -2,7 +2,7 @@
 This is an abstract algebra game similar to Natural number game and Set Theory Game in lean 4. It is still under development, but you can play it by cloninig this repo and building the vscode dev container.
 Visit localhost:3000 in your browser after the container is setup.
 
-This game should look playable in a couple of weeks.
+This game should look better in a couple of weeks.
 
 # Game Skeleton
 
