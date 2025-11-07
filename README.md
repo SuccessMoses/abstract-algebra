@@ -1,3 +1,9 @@
+# Abstract Algebra Game
+This is an abstract algebra game similar to Natural number game and Set Theory Game in lean 4. It is still under development, but you can play it by cloninig this repo and building the vscode dev container.
+Visit localhost:3000 in your browser after the container is setup.
+
+This game should look playable in a couple of weeks.
+
 # Game Skeleton
 
 This is a template for creating a game with [lean4game](https://github.com/leanprover-community/lean4game/). It contains a single Level plus the files needed for a local development setup.
