@@ -1,6 +1,15 @@
 import Game.Levels.MonoidWorld.L01_Monoid
 import Game.Levels.MonoidWorld.L02_instanceMonoid
 import Game.Levels.MonoidWorld.L03_ListProd
+import Game.Levels.MonoidWorld.L04_finRange
+import Game.Levels.MonoidWorld.L05_mapFinRangePerm
+import Game.Levels.MonoidWorld.L06_finRangeMapCompPerm
+import Game.Levels.MonoidWorld.L07_prodSingleton
+import Game.Levels.MonoidWorld.L08_prodConcat
+import Game.Levels.MonoidWorld.L09_prodNeq
+import Game.Levels.MonoidWorld.L10_prodEqOne
+import Game.Levels.MonoidWorld.L11_finRangeSucc
+import Game.Levels.MonoidWorld.L12_prodFinRangeSuccLast
 
 World "MonoidWorld"
 Title "Monoid World"
