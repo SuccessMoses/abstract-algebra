@@ -1,6 +1,6 @@
 import GameServer
 
-import Mathlib.CategoryTheory.Category.Basic
+import Mathlib.CategoryTheory.Iso
 -- import Mathlib.Tactic.Common
 
 /-! Use this file to add things that should be available in all levels.
@@ -15,3 +15,14 @@ a suggestion.
 in a random order. Therefore, you should keep the structure of one file Lean file per world
 which imports all its levels.
 -/
+
+class Quiver' (C : Type) where
+  Hom (X : C) (Y : C) : Type
+
+class Category' (C : Type) extends Quiver' (C : Type) where
+  id X : Hom X X
+  comp {X Y Z : C} (f : Hom X Y) (g : Hom Y Z) : Hom X Z
+  id_comp {X Y : C} {f : Hom X Y} : comp (id X) f = f
+  comp_id {X Y : C} {f : Hom X Y} : comp f (id Y) = f
+  assoc {W X Y Z : C} (f : Hom X Y) (g : Hom Y Z) (h : Hom Z W) :
+    comp f (comp g h) = comp (comp f g) h
