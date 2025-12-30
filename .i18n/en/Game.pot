@@ -1,19 +1,19 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04\n"
+"POT-Creation-Date: 2025-12-30\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
+#: Game.Levels.World1.L01_Category
+msgid "Hello World"
 msgstr ""
 
-#: Game.Levels.MonoidWorld.L01_Monoid
-msgid "Hello World"
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
 msgstr ""
 
 #: Game
@@ -21,13 +21,21 @@ msgid "This text appears on the starting page where one selects the world/level 
 "You can use **markdown**."
 msgstr ""
 
+#: Game.Levels.World1
+msgid "World1"
+msgstr ""
+
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
-#. §0: `«{g}»`
-#: Game.Levels.MonoidWorld.L01_Monoid
-msgid "You should use §0 now."
+#: Game
+msgid "Category Theory Game"
+msgstr ""
+
+#. §0: `Category`
+#: Game.Levels.World1
+msgid "This World introduces the player to the concept of a §0. TODO: Add description."
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -36,10 +44,6 @@ msgstr ""
 
 #: Game
 msgid "You should use this game as a template for your own game and add your own levels."
-msgstr ""
-
-#: Game.Levels.MonoidWorld
-msgid "Monoid World"
 msgstr ""
 
 #: Game
@@ -51,28 +55,10 @@ msgid "Here you can put additional information about the game. It is accessible\
 "Use **markdown**."
 msgstr ""
 
-#: Game.Levels.MonoidWorld.L01_Monoid
-msgid "This last message appears if the level is solved."
-msgstr ""
-
-#: Game.Levels.MonoidWorld.L01_Monoid
+#: Game.Levels.World1.L01_Category
 msgid "This text is shown as first message when the level is played.\n"
 "You can insert hints in the proof below. They will appear in this side panel\n"
 "depending on the proof a user provides."
-msgstr ""
-
-#: Game.Levels.MonoidWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
-msgstr ""
-
-#: Game
-msgid "Abstract Algebra Game"
-msgstr ""
-
-#. §0: `«{h}»`
-#. §1: `«{g}»`
-#: Game.Levels.MonoidWorld.L01_Monoid
-msgid "You can either start using §0 or §1."
 msgstr ""
 
 #: Game

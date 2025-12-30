@@ -1,7 +1,7 @@
-import Game.Levels.MonoidWorld
+import Game.Levels.World1
 
 -- Here's what we'll put on the title screen
-Title "Abstract Algebra Game"
+Title "Category Theory Game"
 Introduction
 "
 This text appears on the starting page where one selects the world/level to play.
