@@ -9,8 +9,6 @@ Introduction "This level introduces epimorhisms."
 
 open CategoryTheory Category Opposite
 
-open CategoryTheory
-
 variable {C : Type} [Category C]
 
 example {A B : Cᵒᵖ} (f : A ⟶ B) [Mono f] : Epi f.unop :=
