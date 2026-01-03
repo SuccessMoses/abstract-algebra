@@ -4,6 +4,8 @@ import GameServer
 -- import Mathlib.CategoryTheory.Opposites
 
 import Mathlib.CategoryTheory.Types.Basic
+import Mathlib.CategoryTheory.Products.Basic
+import Mathlib.CategoryTheory.SingleObj
 
 -- import Mathlib.Tactic.Common
 
@@ -20,10 +22,12 @@ in a random order. Therefore, you should keep the structure of one file Lean fil
 which imports all its levels.
 -/
 
-class Quiver' (C : Type) where
+universe u
+
+class Quiver' (C : Type u) where
   Hom (X : C) (Y : C) : Type
 
-class Category' (C : Type) extends Quiver' (C : Type) where
+class Category' (C : Type u) extends Quiver' (C : Type u) where
   id X : Hom X X
   comp {X Y Z : C} (f : Hom X Y) (g : Hom Y Z) : Hom X Z
   id_comp {X Y : C} {f : Hom X Y} : comp (id X) f = f

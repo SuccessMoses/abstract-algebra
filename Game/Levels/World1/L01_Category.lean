@@ -9,23 +9,29 @@ Introduction "This text is shown as first message when the level is played.
 You can insert hints in the proof below. They will appear in this side panel
 depending on the proof a user provides."
 
-example : Category' (Unit) := by
-  refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
-  · exact fun _ _ => Nat
-  · exact fun _ => 0
-  · exact (. + .)
-  simp; simp
-  exact fun f g h => (Nat.add_assoc f g h).symm
+open CategoryTheory
 
+variable {G : Type} [Group G]
+
+abbrev BG := SingleObj G
+
+example : Category' (BG (G := G)) := by
+  refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
+  · exact fun _ _ => G
+  · exact fun _ => 1
+  · exact fun x y => y * x
+  · exact mul_one _
+  · exact one_mul _
+  · exact fun _ _ _ => mul_assoc _ _ _
 
 Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_})
     : Category' (Unit) := by
-  · exact fun _ _ => Nat
-  · exact fun _ => 0
-  · exact (. + .)
-  · simp
-  · simp
-  · exact fun f g h => Eq.symm (Nat.add_assoc f g h)
+  · exact fun _ _ => G
+  · exact fun _ => 1
+  · exact fun x y => y * x
+  · exact mul_one _
+  · exact one_mul _
+  · exact fun _ _ _ => mul_assoc _ _ _
 
 NewTactic exact simp intro refine dsimp
 NewDefinition Nat

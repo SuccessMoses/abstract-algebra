@@ -1,0 +1,2 @@
+-- Define the category CAT
+-- Define the functor (-)_+ : Set^δ -> Set_* and show that U(-)_+ is an identity endofunctor
