@@ -5,4 +5,4 @@ Quiver is a Lean 4 game about Category Theory, inspired by Natural Number Game 4
 The goal is to learn category theory by writing **mathlib-style proofs**, directly in Lean,
 with an emphasis on structure, universality, and categorical thinking.
 
-⚠️ This project is still in very early development — expect rough edges and rapid changes.
+⚠️ This project is still in very early development.
