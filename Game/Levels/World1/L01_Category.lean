@@ -11,7 +11,7 @@ depending on the proof a user provides."
 
 open CategoryTheory
 
-variable {G : Type} [Group G]
+variable {G : Type} [Monoid G]
 
 abbrev BG := SingleObj G
 
