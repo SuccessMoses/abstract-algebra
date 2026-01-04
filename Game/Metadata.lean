@@ -7,6 +7,7 @@ import Mathlib.CategoryTheory.Types.Basic
 import Mathlib.CategoryTheory.Products.Basic
 import Mathlib.CategoryTheory.SingleObj
 import Mathlib.CategoryTheory.Category.Preorder
+import Mathlib.CategoryTheory.Comma.StructuredArrow.Basic
 
 -- import Mathlib.Tactic.Common
 
@@ -40,3 +41,55 @@ class Groupoid' (C : Type) extends Category' C where
   inv : ∀ {X Y : C}, (Hom X Y) → (Hom Y X)
   inv_comp : ∀ {X Y : C} (f : Hom X Y), comp (inv f) f = id Y
   comp_inv : ∀ {X Y : C} (f : Hom X Y), comp f (inv f) = id X
+
+attribute [simp] Category'.id_comp Category'.comp_id Category'.assoc
+
+infixr:10 " ⟶ " => Quiver'.Hom
+
+notation "𝟙" => Category'.id  -- type as \b1
+
+infixr:80 " ≫ " => Category'.comp -- type as \gg
+
+----------------------- Functor ----------------------------------------
+
+variable {C D E : Type} [Category' C] [Category' D] [Category' E]
+
+structure Functor' (C : Type) [Category' C] (D : Type) [Category' D] where
+  obj : C → D
+  map : ∀ {X Y : C}, (X ⟶ Y) → ((obj X) ⟶ (obj Y))
+  map_id : ∀ X : C, map (𝟙 X) = 𝟙 (obj X) := by cat_disch
+  map_comp : ∀ {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z), map (f ≫  g) = map f ≫ map g :=
+    by cat_disch
+
+infixr:26 " ⥤ " => Functor'
+
+structure Comma (F : D ⥤ C) (G : E ⥤ C) where
+  d : D
+  e : E
+  f : (F.obj d) ⟶ (G.obj e)
+
+structure Square {F : D ⥤ C} {G : E ⥤ C} (X Y : Comma F G) where
+  h : X.d ⟶ Y.d
+  k : X.e ⟶ Y.e
+  w : F.map h ≫ Y.f = X.f ≫ G.map k
+
+@[ext]
+theorem Square.ext {F : D ⥤ C} {G : E ⥤ C} {X Y : Comma F G}
+  (s₁ s₂ : Square X Y)
+  (h_h : s₁.h = s₂.h)
+  (h_k : s₁.k = s₂.k) : s₁ = s₂ := by
+  cases s₁
+  cases s₂
+  simp_all
+
+attribute [simp] Square.w
+
+-------------------------------------------------------------------
+
+structure Slice (C : Type) [Category' C] (c : C) where
+  x : C
+  obj : c ⟶ x
+
+structure Triangle {C : Type} [Category' C] {x : C} (f g : Slice C x) where
+  h : Quiver'.Hom f.x g.x
+  naturality : f.obj ≫ h = g.obj

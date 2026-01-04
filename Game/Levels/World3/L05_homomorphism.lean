@@ -11,8 +11,6 @@ open CategoryTheory
 
 variable {G₁ : Type} [Group G₁] {G₂ : Type} [Group G₂]
 
-set_option trace.aesop true
-
 example (f : G₁ →* G₂) : SingleObj G₁ ⥤ SingleObj G₂ := by
   refine {obj := ?_ , map := ?_, map_id := ?_, map_comp := ?_}
   · exact fun _ => default
