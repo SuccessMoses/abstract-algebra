@@ -53,3 +53,7 @@ Statement : IsIso f ↔ ∀ c : C, HasInverse (fstar f _ : (c ⟶ x) → (c ⟶ 
     refine ⟨⟨g, h₂ ?_, cat⟩⟩
     unfold fstar at *
     rw [assoc, cat, Category.comp_id, Category.id_comp]
+
+NewDefinition fstar
+
+NewTheorem Function.HasLeftInverse.injective Function.HasRightInverse.surjective

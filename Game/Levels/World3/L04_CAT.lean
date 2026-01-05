@@ -28,3 +28,7 @@ Category Type := by
   · exact fun _ => Function.comp_id _
   · refine fun _ _ _ => ?_
     exact Function.comp_assoc _ _ _
+
+NewDefinition id
+
+NewTheorem Function.comp_assoc Function.id_comp Function.comp_id

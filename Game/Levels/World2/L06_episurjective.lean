@@ -28,7 +28,7 @@ example : Epi f ↔ Function.Surjective f := by
 Statement :  Epi f ↔ Function.Surjective f := by
   refine ⟨?_, ?_⟩
   · refine not_imp_not.mp fun not_surj inj ↦ not_subsingleton ℕ ⟨fun c c' ↦ ?_⟩
-    have ⟨b₀, hb⟩ := not_forall.mp not_surj
+    obtain ⟨b₀, hb⟩ := not_forall.mp not_surj
     classical have := inj.left_cancellation (fun _ ↦ c) ((if · = b₀ then c' else c)) ?_
     · simpa using congr_fun this b₀
     ext a;
@@ -42,3 +42,4 @@ Statement :  Epi f ↔ Function.Surjective f := by
 NewDefinition Nontrivial Subsingleton Iff.mp Iff.mpr congr_fun Function.Surjective
 
 NewTheorem Function.Surjective.forall if_neg Function.comp_apply funext Classical.not_forall
+           not_subsingleton

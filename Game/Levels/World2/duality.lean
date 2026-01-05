@@ -23,5 +23,5 @@
 -- variable {C : Type} [Category C] {x y : C} (f : x ⟶ y)
 
 -- example : IsIso f ↔ ∀ c : C, HasInverse (fstar' f c) := by
---   have h := t1 f.op
+--   obtain h := t1 f.op
 --   sorry

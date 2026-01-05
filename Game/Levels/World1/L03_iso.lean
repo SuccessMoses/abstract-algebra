@@ -18,3 +18,5 @@ Statement (h : α.hom = β.hom) : α.inv = β.inv := by
   rw [←comp_id α.inv, ←hom_inv_id β, ←assoc, ←h, inv_hom_id α, id_comp]
 
 NewTheorem CategoryTheory.Iso.hom_inv_id CategoryTheory.Iso.inv_hom_id
+
+NewDefinition CategoryTheory.inv CategoryTheory.IsIso

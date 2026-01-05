@@ -23,3 +23,5 @@ Statement (preamble := refine {obj := ?_, map := ?_, map_id := ?_, map_comp := ?
   · exact fun f g => g ≫ f
   · aesop
   · aesop
+
+NewDefinition Functor

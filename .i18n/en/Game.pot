@@ -16,11 +16,14 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 #: Game.Levels.World1.L06_preorder
 #: Game.Levels.World2.L01_Opposite
 #: Game.Levels.World2.L02_postcomposition
-#: Game.Levels.World2.L03_duality
-#: Game.Levels.World2.L04_epimono
-#: Game.Levels.World2.L05_monoepi
-#: Game.Levels.World2.L06_monoinjective
-#: Game.Levels.World2.L07_episurjective
+#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L04_monoepi
+#: Game.Levels.World2.L05_monoinjective
+#: Game.Levels.World2.L06_episurjective
+#: Game.Levels.World2.L07_splitmono
+#: Game.Levels.World2.L08_splitepi
+#: Game.Levels.World2.L09_isomono
+#: Game.Levels.World2.L10_isoepi
 #: Game.Levels.World3.L01_represented
 #: Game.Levels.World3.L02_flip_represented
 #: Game.Levels.World3.L03_two_sided_represented
@@ -41,21 +44,13 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
-#: Game.Levels.World2.L03_duality
-msgid "The previous level proved that f : x ⟶ y is an isomorphism if and only if\n"
-"f_* : C(c, x) → C(c, y) is a bijection. The second statement was that\n"
-"f* : C(y, c) → C(x, c) is a bijection. This statement can be proven from the first using the\n"
-"principle of dulaity. If a statement is true for a categories, then it is true in particular for\n"
-"the opposite category Cᵒᵖ, hence we can derive from statements about C using a duality argument."
-msgstr ""
-
-#: Game.Levels.World2.L05_monoepi
-#: Game.Levels.World2.L06_monoinjective
-#: Game.Levels.World2.L07_episurjective
+#: Game.Levels.World2.L04_monoepi
+#: Game.Levels.World2.L05_monoinjective
+#: Game.Levels.World2.L06_episurjective
 msgid "This level introduces epimorhisms."
 msgstr ""
 
-#: Game.Levels.World2.L04_epimono
+#: Game.Levels.World2.L03_epimono
 msgid "This level introduces the monomoprhisms."
 msgstr ""
 
@@ -77,10 +72,10 @@ msgid "This level introduces the C(-, -) functor."
 msgstr ""
 
 #. §0: `refine ⟨fun h k eq => ?_⟩`
-#: Game.Levels.World2.L04_epimono
-#: Game.Levels.World2.L04_epimono
-#: Game.Levels.World2.L04_epimono
-#: Game.Levels.World2.L04_epimono
+#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L03_epimono
 msgid "Try §0"
 msgstr ""
 
@@ -88,9 +83,15 @@ msgstr ""
 msgid "This level introduces C(c, -) : C ⥤ Type."
 msgstr ""
 
+#: Game.Levels.World2.L08_splitepi
+#: Game.Levels.World2.L09_isomono
+#: Game.Levels.World2.L10_isoepi
+msgid "This level introduces split epimorhisms."
+msgstr ""
+
 #. §0: `a b : Cᵒᵖ`
 #. §1: `a ⟶ b := (unop b ⟶ unop a).op`
-#: Game.Levels.World2.L04_epimono
+#: Game.Levels.World2.L03_epimono
 msgid "Recall that for §0, §1"
 msgstr ""
 
@@ -157,6 +158,10 @@ msgstr ""
 
 #: Game.Levels.World3.L02_flip_represented
 msgid "This level introduces the C(-, c) : Cᵒᵖ ⥤ Type"
+msgstr ""
+
+#: Game.Levels.World2.L07_splitmono
+msgid "This level introduces split monomorhisms."
 msgstr ""
 
 #: Game.Levels.World1.L04_maximal_groupoid

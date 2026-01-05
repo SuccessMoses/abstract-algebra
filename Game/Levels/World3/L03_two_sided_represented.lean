@@ -27,3 +27,5 @@ Statement
   · exact fun (f, h) g => f.unop ≫ g ≫ h
   · aesop
   · aesop
+
+NewDefinition Prod

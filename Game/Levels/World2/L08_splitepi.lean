@@ -23,4 +23,5 @@ Statement (se : SplitEpi f) : Epi f := by
   replace w := se.section_ ≫= w
   simpa using w
 
-NewDefinition SplitEpi CategoryTheory.SplitEpi.section_IsSplitEpi IsSplitEpi.mk
+NewDefinition CategoryTheory.SplitEpi CategoryTheory.SplitEpi.section_ CategoryTheory.IsSplitEpi
+              CategoryTheory.IsSplitEpi.mk'

@@ -38,3 +38,7 @@ Statement
   · aesop
   · aesop
   · aesop
+
+NewDefinition CategoryTheory.Comma CategoryTheory.CommaMorphism
+
+NewTheorem CategoryTheory.Functor.map_comp

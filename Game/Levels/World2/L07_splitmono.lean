@@ -23,4 +23,5 @@ Statement (sm : SplitMono f) : Mono f := by
   replace w := w =≫ sm.retraction
   simpa using w
 
-NewDefinition SplitMono CategoryTheory.SplitMono.retraction IsSplitMono IsSplitMono.mk
+NewDefinition CategoryTheory.SplitMono CategoryTheory.SplitMono.retraction CategoryTheory.IsSplitMono
+              CategoryTheory.IsSplitMono.mk'
