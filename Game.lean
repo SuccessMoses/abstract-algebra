@@ -1,4 +1,6 @@
 import Game.Levels.World1
+import Game.Levels.World2
+import Game.Levels.World3
 
 -- Here's what we'll put on the title screen
 Title "Category Theory Game"

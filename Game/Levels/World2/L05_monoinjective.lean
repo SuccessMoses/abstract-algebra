@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "World2"
-Level 6
+Level 5
 
 Title "Hello World"
 
@@ -24,3 +24,7 @@ Statement : Mono f ↔ Function.Injective f := by
     rw [← homOfElement_eq_iff] at h ⊢
     exact (cancel_mono f).mp h
   · exact fun H => ⟨fun g g' h => H.comp_left h⟩
+
+NewDefinition homOfElement Function.Injective
+
+NewTheorem CategoryTheory.homOfElement_eq_iff Function.Injective.comp_left

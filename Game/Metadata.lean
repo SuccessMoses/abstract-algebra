@@ -1,8 +1,5 @@
 import GameServer
 
--- import Mathlib.CategoryTheory.Iso
--- import Mathlib.CategoryTheory.Opposites
-
 import Mathlib.CategoryTheory.Types.Basic
 import Mathlib.CategoryTheory.Products.Basic
 import Mathlib.CategoryTheory.SingleObj

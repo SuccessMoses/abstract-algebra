@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "World2"
-Level 9
+Level 8
 
 Title "Hello World"
 
@@ -22,3 +22,5 @@ Statement (se : SplitEpi f) : Epi f := by
   refine fun  g h w => ?_
   replace w := se.section_ ≫= w
   simpa using w
+
+NewDefinition SplitEpi CategoryTheory.SplitEpi.section_IsSplitEpi IsSplitEpi.mk

@@ -32,3 +32,7 @@ Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, i
   · exact fun _ => mul_one _
   · exact fun _ => one_mul _
   · exact fun _ _ _ => Eq.symm <| mul_assoc _ _ _
+
+NewTactic exact dsimp aesop simp simpa rw obtain intro refine constructor apply
+
+NewTheorem one_mul mul_one Eq.symm mul_assoc

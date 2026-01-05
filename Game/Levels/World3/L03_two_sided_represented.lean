@@ -17,13 +17,13 @@ example : Cᵒᵖ × C ⥤ Type := by
   refine {obj := ?_, map := ?_, map_id := ?_, map_comp := ?_}
   · exact fun (x, y) => x.unop ⟶ y
   · refine fun (f, h) g => f.unop ≫ g ≫ h
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop
 
 Statement
     (preamble := refine {obj := ?_, map := ?_, map_id := ?_, map_comp := ?_}) :
     Cᵒᵖ × C ⥤ Type := by
   · exact fun (x, y) => x.unop ⟶ y
   · exact fun (f, h) g => f.unop ≫ g ≫ h
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop

@@ -3,7 +3,7 @@ import Game.Levels.World3.L07_comma
 import Game.Levels.World1.L05_slice_category
 
 World "World3"
-Level 10
+Level 8
 
 Title "Hello World"
 

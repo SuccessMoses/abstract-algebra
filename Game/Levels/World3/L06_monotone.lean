@@ -15,13 +15,13 @@ example {f : X → Y} (h : Monotone f) : X ⥤ Y := by
   refine {obj := ?_ , map := ?_, map_id := ?_, map_comp := ?_}
   · exact f
   · refine fun g => homOfLE (h g.le)
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop
 
 Statement
 (preamble := refine {obj := ?_ , map := ?_, map_id := ?_, map_comp := ?_})
 {f : X → Y} (h : Monotone f) : X ⥤ Y := by
   · exact f
   · refine fun g => homOfLE (h g.le)
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop

@@ -21,5 +21,3 @@ Statement (f : X ⟶ Y) (g h : Y ⟶ X) (h₁ : g ≫ f = 𝟙 _) (h₂ : f ≫ 
 
 NewTheorem CategoryTheory.Category.assoc CategoryTheory.Category.id_comp
 CategoryTheory.Category.comp_id
-
-NewTactic rw

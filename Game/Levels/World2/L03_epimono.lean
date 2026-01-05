@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "World2"
-Level 4
+Level 3
 
 Title "Hello World"
 
@@ -32,3 +32,7 @@ Statement {A B : C} (f : A ⟶ B) [Epi f] : Mono f.op := by
   refine Quiver.Hom.op_inj ?_
   Hint "Recall that for `a b : Cᵒᵖ`, `a ⟶ b := (unop b ⟶ unop a).op`"
   exact eq
+
+NewTheorem Quiver.Hom.unop_inj Quiver.Hom.op_inj CategoryTheory.cancel_epi
+
+NewDefinition Mono Epi

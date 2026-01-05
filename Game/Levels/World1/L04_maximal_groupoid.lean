@@ -58,4 +58,5 @@ Statement (preamble := refine {
   · exact self_symm_id
 
 NewTheorem CategoryTheory.Iso.trans CategoryTheory.Iso.refl CategoryTheory.Iso.refl_trans
-           CategoryTheory.Iso.trans_refl CategoryTheory.Iso.trans_assoc
+           CategoryTheory.Iso.trans_refl CategoryTheory.Iso.trans_assoc CategoryTheory.Iso.symm
+           CategoryTheory.Iso.symm_self_id CategoryTheory.Iso.self_symm_id

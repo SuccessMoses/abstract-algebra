@@ -13,20 +13,24 @@ open CategoryTheory
 
 variable {α : Type} [Preorder α]
 
-example : Category' α := by
+example : Category α := by
   refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
   · exact fun u v => PLift (u ≤ v)
   · exact fun _ => ⟨le_refl _⟩
   · exact fun ⟨f⟩ ⟨g⟩ => ⟨le_trans f g⟩
-  · cat_disch
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop
+  · aesop
 
 Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}):
-Category' (Unit) := by
+Category α := by
   · exact fun u v => PLift (u ≤ v)
   · exact fun _ => ⟨le_refl _⟩
   · exact fun ⟨f⟩ ⟨g⟩ => ⟨le_trans f g⟩
-  · cat_disch
-  · cat_disch
-  · cat_disch
+  · aesop
+  · aesop
+  · aesop
+
+NewDefinition PLift
+
+NewTheorem le_refl le_trans
