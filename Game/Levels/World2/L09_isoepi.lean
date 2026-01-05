@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "World2"
-Level 10
+Level 9
 
 Title "Hello World"
 
