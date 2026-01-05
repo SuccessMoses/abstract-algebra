@@ -7,46 +7,45 @@ Title "Hello World"
 
 Introduction "This level introduces the slice category."
 
-open Category'
+open CategoryTheory
 
-instance {C : Type} [Category' C] {x : C} : Category' (Slice C x) := by
+instance {C : Type} [Category C] {x : C} : Category (Slice C x) := by
   refine { Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
   · exact fun f g => Triangle f g
-  · refine fun f => Triangle.mk (Category'.id _) ?_
-    exact Category'.comp_id
+  · refine fun f => Triangle.mk (𝟙 _) ?_
+    exact Category.comp_id _
   refine fun f g => ?_
   refine Triangle.mk ?_ ?_
-  · exact comp f.h g.h
-  · rw [assoc, f.naturality, g.naturality]
+  · exact f.h ≫  g.h
+  · rw [←Category.assoc, f.naturality, g.naturality]
   · dsimp
     intro X Y f
-    simp [Category'.id_comp]
+    simp [Category.id_comp]
   · dsimp
     intro X Y f
-    simp [Category'.comp_id]
+    simp [Category.comp_id]
   dsimp
   intro W X Y Z f g h
-  simp [Category'.assoc]
+  simp [Category.assoc]
 
 
 Statement (preamble := refine { Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_})
-    {C : Type} [Category' C] {x : C} : Category' (Slice C x) := by
+    {C : Type} [Category C] {x : C} : Category (Slice C x) := by
   · exact fun f g => Triangle f g
-  · refine fun f => Triangle.mk (Category'.id _) ?_
-    exact Category'.comp_id
+  · refine fun f => Triangle.mk (𝟙 _) ?_
+    exact Category.comp_id _
   refine fun f g => ?_
   refine Triangle.mk ?_ ?_
-  · exact comp f.h g.h
-  · rw [assoc, f.naturality, g.naturality]
+  · exact f.h ≫  g.h
+  · rw [←Category.assoc, f.naturality, g.naturality]
   · dsimp
     intro X Y f
-    -- this is a good place to introduce simp
-    simp [Category'.id_comp]
+    simp [Category.id_comp]
   · dsimp
     intro X Y f
-    simp [Category'.comp_id]
+    simp [Category.comp_id]
   dsimp
   intro W X Y Z f g h
-  simp [Category'.assoc]
+  simp [Category.assoc]
 
 NewDefinition Triangle Triangle.mk

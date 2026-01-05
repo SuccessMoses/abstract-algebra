@@ -15,25 +15,20 @@ variable {G : Type} [Monoid G]
 
 abbrev BG := SingleObj G
 
-example : Category' (BG (G := G)) := by
+example : Category (BG (G := G)) := by
   refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
   · exact fun _ _ => G
   · exact fun _ => 1
   · exact fun x y => y * x
-  · exact mul_one _
-  · exact one_mul _
-  · exact fun _ _ _ => mul_assoc _ _ _
+  · exact fun _ => mul_one _
+  · exact fun _ => one_mul _
+  · exact fun _ _ _ => Eq.symm <| mul_assoc _ _ _
 
 Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_})
-    : Category' (Unit) := by
+: Category (BG (G := G)) := by
   · exact fun _ _ => G
   · exact fun _ => 1
   · exact fun x y => y * x
-  · exact mul_one _
-  · exact one_mul _
-  · exact fun _ _ _ => mul_assoc _ _ _
-
-NewTactic exact simp intro refine dsimp
-NewDefinition Nat
-NewTheorem Eq.symm Nat.add_assoc Category'.id Category'.assoc Category'.comp Category'.id_comp
-           Category'.comp_id
+  · exact fun _ => mul_one _
+  · exact fun _ => one_mul _
+  · exact fun _ _ _ => Eq.symm <| mul_assoc _ _ _
