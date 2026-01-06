@@ -1,9 +1,10 @@
 import Game.Levels.World1.L01_Category
-import Game.Levels.World1.L02_morphisms
-import Game.Levels.World1.L03_iso
-import Game.Levels.World1.L04_maximal_groupoid
-import Game.Levels.World1.L05_slice_category
-import Game.Levels.World1.L06_preorder
+import Game.Levels.World1.L02_ModuleCat
+import Game.Levels.World1.L03_morphisms
+import Game.Levels.World1.L04_iso
+import Game.Levels.World1.L05_maximal_groupoid
+import Game.Levels.World1.L06_slice_category
+import Game.Levels.World1.L07_preorder
 
 World "World1"
 Title "World1"

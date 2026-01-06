@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-05\n"
+"POT-Creation-Date: 2026-01-06\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -9,21 +9,21 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 "Content-Transfer-Encoding: 8bit"
 
 #: Game.Levels.World1.L01_Category
-#: Game.Levels.World1.L02_morphisms
-#: Game.Levels.World1.L03_iso
-#: Game.Levels.World1.L04_maximal_groupoid
-#: Game.Levels.World1.L05_slice_category
-#: Game.Levels.World1.L06_preorder
+#: Game.Levels.World1.L02_ModuleCat
+#: Game.Levels.World1.L03_morphisms
+#: Game.Levels.World1.L04_iso
+#: Game.Levels.World1.L05_maximal_groupoid
+#: Game.Levels.World1.L06_slice_category
+#: Game.Levels.World1.L07_preorder
 #: Game.Levels.World2.L01_Opposite
-#: Game.Levels.World2.L02_postcomposition
-#: Game.Levels.World2.L03_epimono
-#: Game.Levels.World2.L04_monoepi
-#: Game.Levels.World2.L05_monoinjective
-#: Game.Levels.World2.L06_episurjective
-#: Game.Levels.World2.L07_splitmono
-#: Game.Levels.World2.L08_splitepi
-#: Game.Levels.World2.L09_isomono
-#: Game.Levels.World2.L10_isoepi
+#: Game.Levels.World2.L02_epimono
+#: Game.Levels.World2.L03_monoepi
+#: Game.Levels.World2.L04_monoinjective
+#: Game.Levels.World2.L05_episurjective
+#: Game.Levels.World2.L06_splitmono
+#: Game.Levels.World2.L07_splitepi
+#: Game.Levels.World2.L08_isomono
+#: Game.Levels.World2.L09_isoepi
 #: Game.Levels.World3.L01_represented
 #: Game.Levels.World3.L02_flip_represented
 #: Game.Levels.World3.L03_two_sided_represented
@@ -44,14 +44,18 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
-#: Game.Levels.World2.L04_monoepi
-#: Game.Levels.World2.L05_monoinjective
-#: Game.Levels.World2.L06_episurjective
+#: Game.Levels.World2.L03_monoepi
+#: Game.Levels.World2.L04_monoinjective
+#: Game.Levels.World2.L05_episurjective
 msgid "This level introduces epimorhisms."
 msgstr ""
 
-#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L02_epimono
 msgid "This level introduces the monomoprhisms."
+msgstr ""
+
+#: Game.Levels.World1.L02_ModuleCat
+msgid "This level introduces ModuleCat"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -72,10 +76,10 @@ msgid "This level introduces the C(-, -) functor."
 msgstr ""
 
 #. §0: `refine ⟨fun h k eq => ?_⟩`
-#: Game.Levels.World2.L03_epimono
-#: Game.Levels.World2.L03_epimono
-#: Game.Levels.World2.L03_epimono
-#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L02_epimono
+#: Game.Levels.World2.L02_epimono
+#: Game.Levels.World2.L02_epimono
+#: Game.Levels.World2.L02_epimono
 msgid "Try §0"
 msgstr ""
 
@@ -83,20 +87,19 @@ msgstr ""
 msgid "This level introduces C(c, -) : C ⥤ Type."
 msgstr ""
 
-#: Game.Levels.World2.L08_splitepi
-#: Game.Levels.World2.L09_isomono
-#: Game.Levels.World2.L10_isoepi
+#: Game.Levels.World2.L07_splitepi
+#: Game.Levels.World2.L08_isomono
+#: Game.Levels.World2.L09_isoepi
 msgid "This level introduces split epimorhisms."
 msgstr ""
 
 #. §0: `a b : Cᵒᵖ`
 #. §1: `a ⟶ b := (unop b ⟶ unop a).op`
-#: Game.Levels.World2.L03_epimono
+#: Game.Levels.World2.L02_epimono
 msgid "Recall that for §0, §1"
 msgstr ""
 
 #: Game.Levels.World2.L01_Opposite
-#: Game.Levels.World2.L02_postcomposition
 msgid "This level introduces the opposite category."
 msgstr ""
 
@@ -116,7 +119,7 @@ msgstr ""
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
 
-#: Game.Levels.World1.L03_iso
+#: Game.Levels.World1.L04_iso
 msgid "This level introduces Isomorphisms."
 msgstr ""
 
@@ -130,8 +133,8 @@ msgid "Here you can put additional information about the game. It is accessible\
 msgstr ""
 
 #: Game.Levels.World1.L01_Category
-#: Game.Levels.World1.L02_morphisms
-#: Game.Levels.World1.L06_preorder
+#: Game.Levels.World1.L03_morphisms
+#: Game.Levels.World1.L07_preorder
 msgid "This text is shown as first message when the level is played.\n"
 "You can insert hints in the proof below. They will appear in this side panel\n"
 "depending on the proof a user provides."
@@ -141,7 +144,7 @@ msgstr ""
 msgid "World3"
 msgstr ""
 
-#: Game.Levels.World1.L05_slice_category
+#: Game.Levels.World1.L06_slice_category
 msgid "This level introduces the slice category."
 msgstr ""
 
@@ -160,11 +163,11 @@ msgstr ""
 msgid "This level introduces the C(-, c) : Cᵒᵖ ⥤ Type"
 msgstr ""
 
-#: Game.Levels.World2.L07_splitmono
+#: Game.Levels.World2.L06_splitmono
 msgid "This level introduces split monomorhisms."
 msgstr ""
 
-#: Game.Levels.World1.L04_maximal_groupoid
+#: Game.Levels.World1.L05_maximal_groupoid
 msgid "This level introduces the groupoid and the maximal groupoid."
 msgstr ""
 
