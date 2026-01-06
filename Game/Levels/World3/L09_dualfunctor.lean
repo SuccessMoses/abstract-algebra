@@ -1,7 +1,6 @@
 import Game.Metadata
-import Mathlib.LinearAlgebra.Dual.Defs
 
-World "Functors"
+World "World3"
 Level 9
 
 Title "Hello World"
@@ -10,9 +9,9 @@ Introduction "This level introduces the dual functor"
 
 open CategoryTheory Module
 
-variable {R : Type} [CommRing R]
+variable (R : Type) [CommRing R]
 
-example : (ModuleCat R)ᵒᵖ ⥤ (ModuleCat R) := by
+instance dualfunctor : (ModuleCat R)ᵒᵖ ⥤ (ModuleCat R) := by
   refine {obj := ?_, map := ?_, map_id := ?_, map_comp := ?_}
   · exact fun M => ModuleCat.of _ <| Dual R M.unop
   · refine fun f => ModuleCat.ofHom <| LinearMap.dualMap f.unop.hom
@@ -26,3 +25,5 @@ Statement
   · refine fun f => ModuleCat.ofHom <| LinearMap.dualMap f.unop.hom
   · aesop
   · aesop
+
+NewDefinition

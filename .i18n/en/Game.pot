@@ -32,6 +32,7 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 #: Game.Levels.World3.L06_monotone
 #: Game.Levels.World3.L07_comma
 #: Game.Levels.World3.L08_slice
+#: Game.Levels.World3.L09_dualfunctor
 msgid "Hello World"
 msgstr ""
 
@@ -44,18 +45,32 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
+#. §0: `ModuleCat R`
+#. §1: `ModuleCat.of`
+#. §2: `ModuleCat R`
+#. §3: `ModuleCat.ofHom`
+#. §4: `ModuleCat R`
+#: Game.Levels.World1.L02_ModuleCat
+msgid "§0 where R is a ring is the category whose objects are modules over R and morphism\n"
+"between M and N is a linear map.\n"
+"\n"
+"§1 is the preferred way to construct a term of §2.\n"
+"\n"
+"§3 is constructs a morphism of §4 from a linear map."
+msgstr ""
+
 #: Game.Levels.World2.L03_monoepi
 #: Game.Levels.World2.L04_monoinjective
 #: Game.Levels.World2.L05_episurjective
 msgid "This level introduces epimorhisms."
 msgstr ""
 
-#: Game.Levels.World2.L02_epimono
-msgid "This level introduces the monomoprhisms."
-msgstr ""
-
 #: Game.Levels.World1.L02_ModuleCat
 msgid "This level introduces ModuleCat"
+msgstr ""
+
+#: Game.Levels.World2.L02_epimono
+msgid "This level introduces the monomoprhisms."
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -123,6 +138,10 @@ msgstr ""
 msgid "This level introduces Isomorphisms."
 msgstr ""
 
+#: Game.Levels.World3.L09_dualfunctor
+msgid "This level introduces the dual functor"
+msgstr ""
+
 #: Game
 msgid "Here you can put additional information about the game. It is accessible\n"
 "from the starting through the drop-down menu.\n"
@@ -132,16 +151,16 @@ msgid "Here you can put additional information about the game. It is accessible\
 "Use **markdown**."
 msgstr ""
 
+#: Game.Levels.World3
+msgid "World3"
+msgstr ""
+
 #: Game.Levels.World1.L01_Category
 #: Game.Levels.World1.L03_morphisms
 #: Game.Levels.World1.L07_preorder
 msgid "This text is shown as first message when the level is played.\n"
 "You can insert hints in the proof below. They will appear in this side panel\n"
 "depending on the proof a user provides."
-msgstr ""
-
-#: Game.Levels.World3
-msgid "World3"
 msgstr ""
 
 #: Game.Levels.World1.L06_slice_category

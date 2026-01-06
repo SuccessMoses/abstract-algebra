@@ -30,3 +30,16 @@ Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, i
   · aesop
 
 NewDefinition LinearMap LinearMap.id LinearMap.comp ModuleCat
+
+#check ModuleCat.of
+#check ModuleCat.ofHom
+
+/--
+`ModuleCat R` where R is a ring is the category whose objects are modules over R and morphism
+between M and N is a linear map.
+
+`ModuleCat.of` is the preferred way to construct a term of `ModuleCat R`.
+
+`ModuleCat.ofHom` is constructs a morphism of `ModuleCat R` from a linear map.
+-/
+TheoremDoc ModuleCat as "ModuleCat"

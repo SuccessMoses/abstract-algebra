@@ -6,6 +6,7 @@ import Mathlib.CategoryTheory.SingleObj
 import Mathlib.CategoryTheory.Category.Preorder
 import Mathlib.CategoryTheory.Comma.StructuredArrow.Basic
 import Mathlib.Algebra.Category.ModuleCat.Basic
+import Mathlib.LinearAlgebra.Dual.Defs
 
 
 -- import Mathlib.Tactic.Common
