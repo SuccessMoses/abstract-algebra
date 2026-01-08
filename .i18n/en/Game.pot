@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07\n"
+"POT-Creation-Date: 2026-01-08\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -73,10 +73,6 @@ msgstr ""
 msgid "This level introduces the monomoprhisms."
 msgstr ""
 
-#: GameServer.RpcHandlers
-msgid "intermediate goal solved! 🎉"
-msgstr ""
-
 #. §0: `CAT`
 #: Game.Levels.World3.L04_CAT
 #: Game.Levels.World3.L05_homomorphism
@@ -84,6 +80,10 @@ msgstr ""
 #: Game.Levels.World3.L07_comma
 #: Game.Levels.World3.L08_slice
 msgid "This level introduces the §0 category"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
 msgstr ""
 
 #: Game.Levels.World3.L03_two_sided_represented
@@ -112,6 +112,14 @@ msgstr ""
 #. §1: `a ⟶ b := (unop b ⟶ unop a).op`
 #: Game.Levels.World2.L02_epimono
 msgid "Recall that for §0, §1"
+msgstr ""
+
+#. §0: `Vectₖ`
+#. §1: `R`
+#. §2: `R`
+#: Game.Levels.World1.L02_ModuleCat
+msgid "§0 is the category whose objects are §1-modules and whose morphisms\n"
+"are §2-linear maps."
 msgstr ""
 
 #: Game.Levels.World2.L01_Opposite

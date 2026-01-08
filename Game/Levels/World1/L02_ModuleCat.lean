@@ -11,15 +11,10 @@ open CategoryTheory
 
 variable {R : Type} [Ring R]
 
-example : Category (ModuleCat R) := by
-  refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_}
-  · exact fun M N => M →ₗ[R] N
-  · exact fun _ => LinearMap.id
-  · exact fun f g => g ∘ₗ f
-  · aesop
-  · aesop
-  · aesop
-
+/--
+`Vectₖ` is the category whose objects are `R`-modules and whose morphisms
+are `R`-linear maps.
+-/
 Statement (preamble := refine {Hom := ?_, id := ?_, comp := ?_, comp_id := ?_, id_comp := ?_, assoc := ?_})
 : Category (ModuleCat R) := by
   · exact fun M N => M →ₗ[R] N
